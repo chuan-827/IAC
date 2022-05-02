@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IAC Data Mining Winter 2022 Dashboard -- by Kaiyuan Hu</title>
+  
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <p><h2>Welcome!</h2></p>
+  <div id="vizContainer"></div>
+  <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script>
+    var viz
+    function initViz() {
+      var container = document.getElementById("vizContainer"),
+      url = "https://public.tableau.com/views/TopRecByStateAndSic/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
+
+      viz = new tableau.Viz(container, url);
+    }
+    initViz();
+  </script>
+</body>
+</html>
